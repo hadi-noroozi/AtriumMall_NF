@@ -490,6 +490,15 @@
     margin-right: unset !important;
   }
 
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  .header-left {
+    width: unset !important;
+  }
+
 }
 
 .header-search .header-search-wrapper {
