@@ -530,4 +530,29 @@ figure img {
 .footer-middle .widget p{
   max-width: unset !important;
 }
+
+.banner-cat .banner-title {
+  font-size: 1.4rem !important;
+}
+
+.banner-cat .banner-subtitle {
+  font-size: 1.1rem;
+}
+
+.ratings, .ratings-val {
+  font-family: molla !important;
+  vertical-align: middle !important;
+}
+
+.products .product .product-cat {
+  font-size: 1.1rem;
+}
+
+.products .product .product-title {
+  font-size: 1.5rem;
+}
+
+.products .product .product-price {
+  font-size: 1.4rem;
+}
 /*# sourceMappingURL=demo-10.css.map */
