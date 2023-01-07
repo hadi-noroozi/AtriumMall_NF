@@ -564,4 +564,8 @@ figure img {
 .products .product .product-price {
   font-size: 1.4rem;
 }
+
+.quickView-container button span {
+  font-family: unset !important;
+}
 /*# sourceMappingURL=demo-10.css.map */
