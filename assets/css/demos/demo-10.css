@@ -525,11 +525,77 @@
   object-fit: cover;
 }
 
+.banner-group .banner .banner-content {
+  left: unset !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100%;
+  height: 100%;
+  padding-top: 35px;
+  padding-right: 5%;
+  background-color: #00000086;
+  text-align: right;
+  object-fit: cover;
+}
+
+.banner-group .banner .banner-content .banner-subtitle {
+  font-size: 1.4rem;
+}
+
+.banner-group .banner .banner-content .banner-title {
+  font-size: 1.8rem;
+}
+
+.banner-group .banner .banner-content .banner-text{
+  font-size: 1.6rem;
+}
+
+.banner-group .banner .banner-content .banner-subtitle a:hover {
+  color: #ccc;
+}
+
+.col-sm-6 .banner a img {
+  object-fit: cover !important;
+  height: 250px;
+}
+
+.banner.banner-large a img {
+  object-fit: cover;
+  height: 250px;
+}
+
+.banner-group .banner.banner-middle {
+  height: calc(100% - 2rem);
+  object-fit: cover;
+}
+
+.banner-group .banner.banner-middle a {
+  height: 100% !important;
+  object-fit:cover;
+}
+
+.banner-group .banner.banner-middle a img {
+  height: 100% !important;
+  object-fit:cover;
+}
+
+.banner-group .banner .banner-content a {
+  height: unset !important;
+}
+
+.banner-group .banner.banner-middle .banner-content {
+  padding-top: 0;
+  height: 100%;
+}
+.banner-group .banner.banner-middle .banner-content .banner-subtitle {
+  padding-top: 35px;
+}
+
 figure img {
-    object-fit: cover !important;
-    min-height: 300px;
-    width: 100%;
-    margin-bottom: 0 !important;
+  object-fit: cover !important;
+  min-height: 300px;
+  width: 100%;
+  margin-bottom: 0 !important;
 }
 
 .footer-middle .widget {
@@ -567,5 +633,12 @@ figure img {
 
 .quickView-container button span {
   font-family: unset !important;
+}
+
+@media screen and (min-width: 1200px) {
+  .icon-boxes-separator [class*=col-]+[class*=col-]:before {
+    left: unset !important;
+    right: -0.3rem;
+  }
 }
 /*# sourceMappingURL=demo-10.css.map */
