@@ -631,6 +631,18 @@ figure img {
   font-size: 1.4rem;
 }
 
+.product .product-cat {
+  font-size: 1.1rem !important;
+}
+
+.product .product-title {
+  font-size: 1.5rem !important;
+}
+
+.product .product-price {
+  font-size: 1.4rem !important;
+}
+
 .quickView-container button span {
   font-family: unset !important;
 }
@@ -640,5 +652,32 @@ figure img {
     left: unset !important;
     right: -0.3rem;
   }
+}
+
+@media screen and (max-width: 575px) {
+  .cta .input-group{
+      flex-direction: row !important;
+      margin: 0 auto;
+  }
+
+  .cta .btn {
+      margin-top: 0 !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .cta .input-group .form-control {
+      width: unset !important;
+      margin-right: 0;
+  }
+
+  .cta .btn:not(.btn-block) {
+    min-width: unset !important;
+  }
+}
+
+.cta .btn:not(.btn-block) {
+  min-width: 140px;
+
 }
 /*# sourceMappingURL=demo-10.css.map */
