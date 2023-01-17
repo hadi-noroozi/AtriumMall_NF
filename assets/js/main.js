@@ -199,11 +199,11 @@ $(document).ready(function () {
 				compact = $this.data('compact'),
                 dateFormat = ( !$this.data('format') ) ? 'DHMS' : $this.data('format'),
                 newLabels = ( !$this.data('labels-short') ) ? 
-                                ['Years', 'Months', 'Weeks', 'Days', 'Hours', 'Minutes', 'Seconds'] :
-                                ['Years', 'Months', 'Weeks', 'Days', 'Hours', 'Mins', 'Secs'],
+                                ['سال', 'ماه', 'هفته', 'روز', 'ساعت', 'دقیقه', 'ثانیه'] :
+                                ['سال', 'ماه', 'هفته', 'روز', 'ساعت', 'دقیقه', 'ثانیه'],
                 newLabels1 = ( !$this.data('labels-short') ) ? 
-                                ['Year', 'Month', 'Week', 'Day', 'Hour', 'Minute', 'Second'] :
-                                ['Year', 'Month', 'Week', 'Day', 'Hour', 'Min', 'Sec'];
+                                ['سال', 'ماه', 'هفته', 'روز', 'ساعت', 'دقیقه', 'ثانیه'] :
+                                ['سال', 'ماه', 'هفته', 'روز', 'ساعت', 'دقیقه', 'ثانیه'];
 
             var newDate;
 

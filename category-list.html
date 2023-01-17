@@ -90,7 +90,7 @@
                         <div class="header-right w-100 d-lg-flex d-none">
                             <nav class="main-nav ml-auto">
                                 <ul class="menu sf-arrows ">
-                                    <li class="megamenu-container active">
+                                    <li class="megamenu-container">
                                         <a href="index.html" class="px-0 px-5">آتریوم</a>
                                     </li>
                                     <li>
@@ -104,7 +104,7 @@
                                             <li><a href="blog-listing.html">رویداد</a></li>
                                         </ul>
                                     </li>  
-                                    <li>
+                                    <li class="active">
                                         <a href="product.html" class="sf-with-ul">محصولات</a>
 
                                         <div class="megamenu megamenu-sm">
@@ -299,8 +299,19 @@
                         <div class="row">
                             
                             <div class="col-lg-9">
-                                <div class="toolbox" dir="ltr">
-                                    <div class="toolbox-left justify-content-start">
+                                <div class="toolbox">
+                                    <div class="toolbox-left justify-content-start" dir="rtl">
+                                        <div class="toolbox-sort">
+                                            <label for="sortby" class="ml-2" style="cursor: pointer;">مرتب سازی</label>
+                                            <div class="select-custom" >
+                                                <select name="sortby" id="sortby" class="form-control rounded-pill">
+                                                    <option value="popularity" selected="selected">پربازدیدترین</option>
+                                                    <option value="rating">پرطرفدارترین</option>
+                                                    <option value="date">جدیدترین</option>
+                                                </select>
+                                            </div>
+                                        </div><!-- End .toolbox-sort -->
+                                    <!-- 
                                         <div class="toolbox-layout">
                                             <a href="category-list.html" class="btn-layout active">
                                                 <svg width="16" height="10">
@@ -343,23 +354,15 @@
                                                     <rect x="18" y="6" width="4" height="4" />
                                                 </svg>
                                             </a>
-                                        </div><!-- End .toolbox-layout -->                                        
-
+                                        </div> 
+                                    -->
                                     </div><!-- End .toolbox-left -->
 
-                                    <div class="toolbox-right justify-content-start"  dir="rtl">
-                                        <div class="toolbox-sort">
-                                            <label for="sortby" class="ml-2">مرتب سازی</label>
-                                            <div class="select-custom">
-                                                <select name="sortby" id="sortby" class="form-control">
-                                                    <option value="popularity" selected="selected">پربازدیدترین</option>
-                                                    <option value="rating">پرطرفدارترین</option>
-                                                    <option value="date">جدیدترین</option>
-                                                </select>
-                                            </div>
-                                        </div><!-- End .toolbox-sort -->
-
-                                    </div><!-- End .toolbox-right -->
+                                    <!-- 
+                                        <div class="toolbox-right justify-content-start"  dir="rtl">
+                                        </div>
+                                     -->
+                                    <!-- End .toolbox-right -->
                                 </div><!-- End .toolbox -->
 
                                 <div class="products mb-3">
@@ -415,16 +418,25 @@
                                                     </div><!-- End .product-content -->
                                                     
                                                     <div class="product-nav product-nav-thumbs">
-                                                        <a href="#" class="active">
-                                                            <img src="assets/images/products/product-4-thumb.jpg" alt="product desc">
-                                                        </a>
-                                                        <a href="#">
-                                                            <img src="assets/images/products/product-4-2-thumb.jpg" alt="product desc">
-                                                        </a>
+                                                        <span class="active">
+                                                            <img src="assets/images/products/product-4-thumb.jpg" 
+                                                            alt="product desc" 
+                                                            class="product-nav-thumb-image" 
+                                                            data="assets/images/products/product-4.jpg">
+                                                        </span>
+                                                        <span>
+                                                            <img src="assets/images/products/product-4-2-thumb.jpg" 
+                                                            alt="product desc" 
+                                                            class="product-nav-thumb-image"
+                                                            data="assets/images/products/product-2.jpg">
+                                                        </span>
 
-                                                        <a href="#">
-                                                            <img src="assets/images/products/product-4-3-thumb.jpg" alt="product desc">
-                                                        </a>
+                                                        <span>
+                                                            <img src="assets/images/products/product-4-3-thumb.jpg" 
+                                                            alt="product desc" 
+                                                            class="product-nav-thumb-image"
+                                                            data="assets/images/products/product-3.jpg">
+                                                        </span>
                                                     </div><!-- End .product-nav -->
                                                 </div><!-- End .product-body -->
                                             </div><!-- End .col-lg-6 -->
@@ -476,12 +488,18 @@
                                                     </div><!-- End .product-content -->
                                                     
                                                     <div class="product-nav product-nav-thumbs">
-                                                        <a href="#" class="active">
-                                                            <img src="assets/images/products/product-5-thumb.jpg" alt="product desc">
-                                                        </a>
-                                                        <a href="#">
-                                                            <img src="assets/images/products/product-5-2-thumb.jpg" alt="product desc">
-                                                        </a>
+                                                        <span class="active">
+                                                            <img src="assets/images/products/product-5-thumb.jpg" 
+                                                            alt="product desc" 
+                                                            class="product-nav-thumb-image"
+                                                            data="assets/images/products/product-5.jpg">
+                                                        </span>
+                                                        <span>
+                                                            <img src="assets/images/products/product-5-2-thumb.jpg" 
+                                                            alt="product desc" 
+                                                            class="product-nav-thumb-image"
+                                                            data="assets/images/products/product-1.jpg">
+                                                        </span>
                                                     </div><!-- End .product-nav -->
                                                 </div><!-- End .product-body -->
                                             </div><!-- End .col-lg-6 -->
@@ -632,12 +650,18 @@
                                                     </div><!-- End .product-content -->
                                                     
                                                     <div class="product-nav product-nav-thumbs">
-                                                        <a href="#" class="active">
-                                                            <img src="assets/images/products/product-8-thumb.jpg" alt="product desc">
-                                                        </a>
-                                                        <a href="#">
-                                                            <img src="assets/images/products/product-8-2-thumb.jpg" alt="product desc">
-                                                        </a>
+                                                        <span class="active">
+                                                            <img src="assets/images/products/product-8-thumb.jpg" 
+                                                            alt="product desc" 
+                                                            class="product-nav-thumb-image"
+                                                            data="assets/images/products/product-8.jpg">
+                                                        </span>
+                                                        <span>
+                                                            <img src="assets/images/products/product-8-2-thumb.jpg" 
+                                                            alt="product desc" 
+                                                            class="product-nav-thumb-image"
+                                                            data="assets/images/products/product-6.jpg">
+                                                        </span>
                                                     </div><!-- End .product-nav -->
                                                 </div><!-- End .product-body -->
                                             </div><!-- End .col-lg-6 -->
@@ -689,15 +713,24 @@
                                                     </div><!-- End .product-content -->
                                                     
                                                     <div class="product-nav product-nav-thumbs">
-                                                        <a href="#" class="active">
-                                                            <img src="assets/images/products/product-9-thumb.jpg" alt="product desc">
-                                                        </a>
-                                                        <a href="#">
-                                                            <img src="assets/images/products/product-9-2-thumb.jpg" alt="product desc">
-                                                        </a>
-                                                        <a href="#">
-                                                            <img src="assets/images/products/product-9-3-thumb.jpg" alt="product desc">
-                                                        </a>
+                                                        <span class="active">
+                                                            <img src="assets/images/products/product-9-thumb.jpg" 
+                                                            alt="product desc" 
+                                                            class="product-nav-thumb-image"
+                                                            data="assets/images/products/product-9.jpg">
+                                                        </span>
+                                                        <span>
+                                                            <img src="assets/images/products/product-9-2-thumb.jpg" 
+                                                            alt="product desc" 
+                                                            class="product-nav-thumb-image"
+                                                            data="assets/images/products/product-7.jpg">
+                                                        </span>
+                                                        <span>
+                                                            <img src="assets/images/products/product-9-3-thumb.jpg" 
+                                                            alt="product desc" 
+                                                            class="product-nav-thumb-image"
+                                                            data="assets/images/products/product-10.jpg">
+                                                        </span>
                                                     </div><!-- End .product-nav -->
                                                 </div><!-- End .product-body -->
                                             </div><!-- End .col-lg-6 -->
@@ -865,6 +898,15 @@
                                             </div><!-- End .widget-body -->
                                         </div><!-- End .collapse -->
                                     </div><!-- End .widget -->
+
+                                    <div class="widget  py-3 justify-content-between w-100">
+                                        <label for="exist" class="pl-auto float-right" style="cursor: pointer;">فقط کالاهای موجود</label>
+                                        <label class="switch">
+                                            <input type="checkbox" id="exist" checked>
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div><!-- End .widget -->
+
                                 </div><!-- End .sidebar sidebar-shop -->
                             </aside><!-- End .col-lg-3 -->
                         </div><!-- End .row -->
@@ -1224,6 +1266,15 @@
                         $('#filter-price-range').text(values.join(' - '));
                     });
                 }
+
+
+                $('.product-nav-thumb-image').on("click", function(){
+                    let src = $(this).attr("data");
+                    let imageObject = $(this).parent().parent().parent().parent().parent().find(".product-image");
+                    $(this).parent().parent().find(".active").removeClass("active");
+                    $(this).parent().addClass("active");
+                    imageObject.attr("src",src)
+                })
             })
         </script>
     </body>

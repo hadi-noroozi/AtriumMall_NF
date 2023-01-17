@@ -161,7 +161,7 @@
 }
 
 .sidebar-shop .widget-title {
-    margin:  1.5rem 0;
+    margin: 1.5rem 0;
     font-size: 1.5rem;
 }
 
@@ -185,7 +185,7 @@
 }
 
 .custom-control.custom-checkbox {
-    padding-left:  unset;
+    padding-left: unset;
     padding-right: 2.6rem;
     text-align: right;
 }
@@ -224,13 +224,16 @@
     z-index: 1
 }
 
-.product-list .product-body.product-action-inner .btn-product.btn-wishlist {
-    left: 0;
+.product-list .product-body.product-action-inner .btn-product.btn-wishlist,
+.product-details-top .product-details .btn-product.btn-wishlist {
+    left: 3%;
     right: unset;
+    position: absolute;
+    font-size: 20px;
 }
 
 @media screen and (max-width: 575px) {
-    .cta .input-group{
+    .cta .input-group {
         flex-direction: row !important;
         margin: 0 auto;
     }
@@ -256,6 +259,112 @@
 }
 
 .product.product-list .btn-product {
-
     max-width: unset !important;
+}
+
+.filter-price {
+    overflow-x: hidden;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #cc9966;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #cc9966;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 16px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.product-nav-thumbs a:last-child, .product-nav-thumbs span:last-child {
+    margin-right: 0.4rem;
+}
+
+.product-nav.product-nav-thumbs span {
+    cursor: pointer;
+}
+
+
+.product-details-accordion ul {
+    list-style: unset;
+    padding-right: 1.5rem !important;
+}
+
+.card.card-sm .card-title a:before {
+    left: 2rem;
+    right: unset;
+}
+
+.product-details-accordion .card .card-title a {
+    text-align: right;
+    padding: 1.7rem 1.2rem 1.7rem 4rem; 
+}
+
+.product-details-accordion .card .card-title a:not(.collapsed) {
+    border-bottom: 0.1rem solid #ebebeb !important;
+}
+
+.mfp-close, .mfp-arrow {
+    font-family: 'molla' !important;
+}
+
+.zoomContainer {
+    display: none !important;
+}
+
+.mfp-img {
+    box-shadow: none !important;
 }
